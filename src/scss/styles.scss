@@ -2,15 +2,31 @@
 
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/Futura-PT_Book.ttf");
+  src: url("../fonts/Futura PT_Book.woff2");
 }
 
 @font-face {
-  font-family: "Futura PT-Medium";
-  src: url("../fonts/Futura-PT_Cond-Medium.ttf");
+  font-family: "Futura PT-Demi";
+  src: url("../fonts/Futura PT_Demi.woff2");
 }
 
-h1 {
+@font-face {
+  font-family: "Futura PT-Cond";
+  src: url("../fonts/Futura PT_Cond Medium.woff2");
+}
+
+.h1 {
   font-family: "Futura PT", sans-serif;
-  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.h2 {
+  font-family: "Futura PT-Demi", sans-serif;
+  font-size: 40px;
+}
+
+.h3 {
+  font-family: "Futura PT-Cond", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
 }
