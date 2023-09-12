@@ -1,0 +1,16 @@
+@use "Banner";
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/Futura-PT_Book.ttf");
+}
+
+@font-face {
+  font-family: "Futura PT-Medium";
+  src: url("../fonts/Futura-PT_Cond-Medium.ttf");
+}
+
+h1 {
+  font-family: "Futura PT", sans-serif;
+  text-transform: uppercase;
+}
