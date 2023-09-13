@@ -1,0 +1,95 @@
+@use 'Common';
+
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner_start {
+  display: flex;
+}
+
+.banner_header {
+  @include flex();
+  max-width: 488px;
+  height: 788px;
+  border: 1px solid #DBE3F0;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);
+  .special {
+    font-family: "Futura PT", sans-serif;
+    display: flex;
+    font-size: 20px;
+    color: Common.$grey-blue-light;
+    font-weight: 500;
+    margin: 0;
+    img {
+      margin: 0 8px;
+      height: 24px;
+      width: 20px;
+    }
+  }
+  p {
+    color: Common.$grey-blue;
+    font-family: "Futura PT", sans-serif;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.ready_description {
+  margin-bottom: 48px;
+  font-size: 20px;
+}
+
+.banner_image {
+  margin-left: 36px;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  .logo {
+    position: relative;
+    left: 26px;
+    top: 28px;
+  }
+}
+
+.banner_title {
+  @include flex();
+  max-width: 392px;
+  margin: 96px 32px 0;
+  h1 {
+    margin: 24px 0;
+    font-family: 'Futura PT-Cond', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+    width: 300px;
+  }
+}
+
+.banner_more, .more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  margin: 12px 0 21px 0;
+  font-size: 18px;
+}
+
+.more {
+  z-index: 1;
+  position: relative;
+  top: 70px;
+  font-size: 20px;
+  p {
+    font-weight: 500;
+    margin: 0 0 3px 0;
+  }
+}
