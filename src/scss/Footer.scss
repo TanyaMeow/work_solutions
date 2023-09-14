@@ -1,0 +1,120 @@
+@use 'Common';
+
+.footer_block {
+  margin-top: 144px;
+  background-color: #F9FAFD;
+}
+
+.footer_container {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.footer_info {
+  margin-top: 144px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_info {
+  h1 {
+    font-family: 'Futura PT-Demi', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+  }
+  p {
+    color: Common.$grey-blue;
+    font-family: 'Futura PT', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.05px;
+  }
+  a {
+    &:hover {
+      opacity: 80%;
+    }
+  }
+}
+
+.footer_start {
+  max-width: 476px;
+  h1 {
+    margin: 0;
+  }
+}
+
+.footer_contact {
+  margin-top: 224px;
+  display: flex;
+  justify-content: space-between;
+  color: Common.$grey-blue;
+  font-family: 'Futura PT', sans-serif;
+  p {
+    font-family: 'Futura PT-Demi', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05px;
+  }
+  a {
+    color: Common.$grey-blue;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.045px;
+  }
+  .contact_left {
+    max-width: 276px;
+  }
+
+  .contact_right {
+    max-width: 276px;
+    display: flex;
+    flex-direction: column;
+    a {
+      padding-bottom: 23px;
+      &:last-child {
+        padding: 0;
+      }
+    }
+    a.mail {
+      text-decoration-line: underline;
+    }
+  }
+
+  .society {
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+    img {
+      padding-right: 12px;
+    }
+    &:last-child {
+      padding: 0;
+    }
+  }
+}
+
+.design {
+  color: Common.$grey-blue;
+  margin-top: 36px;
+  font-family: 'Futura PT', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 145%;
+}
+
+.footer_image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-left: 48px;
+  .footer_img {
+    position: relative;
+    bottom: 69px;
+  }
+}
