@@ -1,15 +1,18 @@
 'use strict'
 
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/js/main.js',
+    entry: [
+        __dirname + '/src/js/main.js',
+        __dirname + '/src/scss/styles.scss'
+    ],
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js'
     },
     devServer: {
         static: path.resolve(__dirname, 'dist'),
@@ -18,24 +21,20 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({ template: './src/index.html' }),
-        new CopyWebpackPlugin({ patterns: [{from: 'src/image', to: 'image'}] })
+        new CopyWebpackPlugin({ patterns: [{from: 'src/image', to: 'image'}] }),
+        new CopyWebpackPlugin({ patterns: [{from: 'src/fonts', to: 'fonts'}] }),
     ],
 
     module: {
         rules: [
             {
                 test: /\.(scss)$/,
+                exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'style-loader'
+                        loader: "file-loader", options: { outputPath: 'css/', name: '[name].min.css'}
                     },
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'sass-loader'
-                    }
-                ]
+                    'sass-loader']
             }
         ]
     }
