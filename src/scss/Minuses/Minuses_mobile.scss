@@ -1,0 +1,53 @@
+@media (max-width: 979px) {
+    .card {
+      height: 304px;
+      .small {
+        width: 224px;
+      }
+      &:nth-child(2) {
+        width: 472px;
+      }
+      &:nth-child(3) {
+        width: 328px;
+      }
+    }
+  .minuses_title {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .cards_container-min {
+    .card.medium {
+      width: 328px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .minuses_block {
+    margin-top: 96px;
+  }
+}
+
+@media (max-width: 630px) {
+  .card {
+    height: 158px;
+    width: 288px;
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .minuses_container {
+    h3 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .cards_container-min {
+    width: 290px;
+  }
+}
