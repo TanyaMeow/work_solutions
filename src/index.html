@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0, minimum-scale=1">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Work Solutions</title>
 </head>
 <body>
-<!--<h1 class="h1">Всем привет мяу мяу а?!</h1>-->
-<!--<h1 class="h2">Всем привет мяу мяу а?!</h1>-->
-<!--<h1 class="h3">Всем привет мяу мяу а?!</h1>-->
     <div class="wrapper">
         <div class="banner_block">
             <div class="banner_container">
@@ -17,7 +15,7 @@
                         <div class="banner_title">
                             <figure class="special"><img src="image/smiley/fire.svg" alt="">Спецпроект <img
                                     src="image/smiley/fire.svg" alt=""></figure>
-                            <h1 class="ready">Готовы ли вы к разработке продукта?</h1>
+                            <h1 class="ready">Готовы ли вы <br> к разработке продукта?</h1>
                             <p class="ready_description">Определите свой уровень знаний в продуктовой разработке и
                                 бесплатно получите
                                 рекомендации от экспертов рынка</p>
@@ -31,11 +29,12 @@
                                 <p>Подробнее</p>
                                 <img src="image/icon/stroke.svg" alt="">
                             </div>
-                            <img src="image/icon/more.svg" alt="">
+                            <img class="more_img" src="image/icon/more.svg" alt="">
                         </div>
                     </div>
                     <div class="banner_image">
                         <img src="image/icon/logo.svg" alt="" class="logo">
+                        <div class="animation_banner"></div>
                         <img src="image/icon/top.svg" alt="" class="banner_img">
                     </div>
                 </div>
@@ -68,7 +67,7 @@
         <div class="minuses_block">
         <div class="minuses_container">
             <div class="minuses_title">
-                <h1>Какие боли есть на рынке разработки?</h1>
+                <h1>Какие боли есть <br> на рынке разработки?</h1>
             </div>
             <div class="cards_container-min">
                 <div class="card small">
@@ -240,7 +239,7 @@
                                         <div class="footer_card">
                                             <h6 class="expert">Александр Шешотов</h6>
                                             <p class="post">Руководитель направления «Мобильная разработка»</p>
-                                            <p class="company">*Название скрыто*(SCP)</p>
+                                            <p class="company">*Название скрыто*</p>
                                         </div>
                                     </div>
                                 </div>
@@ -271,29 +270,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="expert_card-main">
-                    <div class="container">
-                        <div class="title_card">
-                            <div class="image_main">
-                                <img src="image/expert/maksim.png" alt="">
+                <div class="expert-main_container">
+                    <div class="expert_card-main">
+                        <div class="container">
+                            <div class="title_card">
+                                <div class="image_main">
+                                    <img src="image/expert/maksim.png" alt="">
+                                </div>
+                                <h6 class="expert">Максим Мул</h6>
+                                <p class="post">CEO</p>
+                                <p class="company WS">Work Solutions</p>
                             </div>
-                            <h6 class="expert">Максим Мул</h6>
-                            <p class="post">CEO</p>
-                            <p class="company WS">Work Solutions</p>
+                            <div class="description_card">
+                                <p class="description">За 11 лет на digital-рынке я помогал в разработке продуктов
+                                    собственникам бизнеса, IT-директорам, брендменеджерам, руководителям маркетинга и не
+                                    только.</p>
+                                <p class="description">Независимо от должности, самых выдающихся результатов добивались
+                                    те, кто принимали на себя роль владельца продукта, часто даже не догадываясь об этом.</p>
+                                <p class="description">Поэтому мы подготовили для вас этот проект. С его помощью мы
+                                    надеемся сделать рынок немного прозрачнее и уберечь будущие проекты от
+                                    распространенных рисков.</p>
+                            </div>
                         </div>
-                        <div class="description_card">
-                            <p class="description">За 11 лет на digital-рынке я помогал в разработке продуктов
-                                собственникам бизнеса, IT-директорам, брендменеджерам, руководителям маркетинга и не
-                                только.</p>
-                            <p class="description">Независимо от должности, самых выдающихся результатов добивались
-                                те, кто принимали на себя роль владельца продукта, часто даже не догадываясь об этом.</p>
-                            <p class="description">Поэтому мы подготовили для вас этот проект. С его помощью мы
-                                надеемся сделать рынок немного прозрачнее и уберечь будущие проекты от
-                                распространенных рисков.</p>
-                        </div>
-                    </div>
-                    <div class="icon_card">
-                        <img src="image/icon/bottom.svg" alt="">
+                        <img class="icon_card" src="image/icon/bottom.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -305,7 +304,8 @@
                 <div class="footer_info">
                     <div class="footer_start">
                         <h1>Все еще <br> не прошли тест?</h1>
-                        <p>Смелее, мы ничего не продаем и не собираем адреса почтовых ящиков, а лишь делаем рынок заказной разработки чуточку прозрачнее</p>
+                        <p>Смелее, мы ничего не продаем и не собираем адреса почтовых ящиков, а лишь делаем рынок 
+                            заказной разработки чуточку прозрачнее <img src="image/smiley/wink.svg" alt=""></p>
                         <button>Поехали!</button>
                     </div>
                     <div class="footer_contact">
@@ -330,7 +330,7 @@
                 </div>
                 <div class="footer_image">
                     <img class="footer_img" src="image/icon/top.svg" alt="">
-                    <img src="image/icon/logo.svg" alt="">
+                    <img class="footer_logo" src="image/icon/logo.svg" alt="">
                 </div>
             </div>
         </div>
