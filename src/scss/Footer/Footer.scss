@@ -1,4 +1,4 @@
-@use 'Common';
+@use '../Common/Common';
 
 .footer_block {
   margin-top: 144px;
@@ -7,6 +7,7 @@
 
 .footer_container {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 80px;
 }
 
@@ -45,12 +46,15 @@
   h1 {
     margin: 0;
   }
+  img {
+    position: relative;
+    top: 3px;
+  }
 }
 
 .footer_contact {
   margin-top: 224px;
   display: flex;
-  justify-content: space-between;
   color: Common.$grey-blue;
   font-family: 'Futura PT', sans-serif;
   p {
@@ -67,10 +71,13 @@
     letter-spacing: 0.045px;
   }
   .contact_left {
+    position: relative;
     max-width: 276px;
   }
 
   .contact_right {
+    position: relative;
+    left: 174px;
     max-width: 276px;
     display: flex;
     flex-direction: column;
