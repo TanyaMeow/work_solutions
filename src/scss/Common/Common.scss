@@ -4,21 +4,22 @@ $dark-blue: #27303F;
 
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/Futura PT_Book.woff2");
+  src: url("../../fonts/Futura_PT_Book.woff2");
 }
 
 @font-face {
   font-family: "Futura PT-Demi";
-  src: url("../fonts/Futura PT_Demi.woff2");
+  src: url("../../fonts/Futura_PT_Demi.woff2");
 }
 
 @font-face {
   font-family: "Futura PT-Cond";
-  src: url("../fonts/Futura PT_Cond Medium.woff2");
+  src: url("../../fonts/Futura_PT_Cond Medium.woff2");
 }
 
 html, body {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -49,20 +50,5 @@ button {
   display: flex;
   justify-content: center;
   padding: 0 32px;
-}
-
-.h1 {
-  font-family: "Futura PT", sans-serif;
-  font-size: 20px;
-}
-
-.h2 {
-  font-family: "Futura PT-Demi", sans-serif;
-  font-size: 40px;
-}
-
-.h3 {
-  font-family: "Futura PT-Cond", sans-serif;
-  font-weight: 400;
-  font-size: 64px;
+  overflow-x: hidden;
 }
