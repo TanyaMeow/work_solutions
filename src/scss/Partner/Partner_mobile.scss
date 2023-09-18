@@ -1,0 +1,47 @@
+@media (max-width: 979px) {
+  .partner_cards {
+    width: 489px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .partner_container {
+    img {
+      width: 35%;
+      margin-right: 17px;
+    }
+  }
+
+  .partner_block {
+    margin: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .partner_block {
+    margin: 0;
+  }
+
+  .partner_container {
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .partner_container {
+    img {
+      margin-right: 31px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .partner_container {
+    .partner_cards {
+      width: 290px;
+    }
+  }
+}
