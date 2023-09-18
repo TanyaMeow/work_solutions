@@ -1,0 +1,36 @@
+@media (max-width: 979px) {
+  .cards_container-adv {
+    flex-wrap: wrap;
+    justify-content: center;
+    .card-adv {
+      width: 248px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages_block {
+    margin-top: 96px;
+  }
+
+  .advantages_container {
+    margin: 96px 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .title_adv {
+    .advantages_title {
+      font-size: 32px;
+    }
+    .advantages_description {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .cards_container-adv {
+    width: 295px;
+  }
+}
