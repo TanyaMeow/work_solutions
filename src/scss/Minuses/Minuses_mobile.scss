@@ -1,9 +1,6 @@
 @media (max-width: 979px) {
     .card {
       height: 304px;
-      .small {
-        width: 224px;
-      }
       &:nth-child(2) {
         width: 472px;
       }
@@ -11,6 +8,11 @@
         width: 328px;
       }
     }
+
+  .small {
+    width: 23%;
+  }
+
   .minuses_title {
     h1 {
       font-size: 32px;
