@@ -50,7 +50,6 @@
 @media (max-width: 745px) {
   .footer_container {
     flex-direction: column;
-    max-width: 288px;
   }
 
   .footer_info {
@@ -75,6 +74,7 @@
     flex-direction: column;
     .contact_right {
       position: static;
+      margin-top: 44px;
     }
   }
 
@@ -94,8 +94,8 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .footer_container {
-
+    max-width: 288px;
   }
 }
