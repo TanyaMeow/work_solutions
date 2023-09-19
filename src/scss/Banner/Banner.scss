@@ -89,10 +89,14 @@
   }
 
   .more {
-    animation-delay: 600ms;
-    animation-duration: 200ms;
-    animation-timing-function: ease-out;
-    animation-name: more;
+    img {
+      animation-delay: 600ms;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      animation-iteration-count: infinite;
+      animation-name: more;
+      position: relative;
+    }
   }
 
   .banner_header,
@@ -139,10 +143,12 @@
 
   @keyframes more {
     from {
-      top: 80px;
+      opacity: 0;
+      top: 0;
     }
     to {
-      top: 70px
+      top: 10px;
+      opacity: 100%;
     }
   }
 }
@@ -175,9 +181,10 @@
 }
 
 .more {
+  cursor: pointer;
   z-index: 1;
   position: relative;
-  top: 70px;
+  top: 60px;
   font-size: 20px;
   p {
     font-family: "Futura PT-Demi", sans-serif;
