@@ -13,7 +13,7 @@
 }
 
 .banner_block {
-  height: 860px
+  height: 920px
 }
 
 .banner_start {
@@ -70,7 +70,7 @@
   }
   .logo {
     position: absolute;
-    right: 0;
+    cursor: pointer;
   }
 }
 
@@ -86,17 +86,6 @@
 
   .banner_image {
     margin-top: 64px;
-  }
-
-  .more {
-    img {
-      animation-delay: 600ms;
-      animation-duration: 1s;
-      animation-timing-function: ease-out;
-      animation-iteration-count: infinite;
-      animation-name: more;
-      position: relative;
-    }
   }
 
   .banner_header,
@@ -140,17 +129,6 @@
       opacity: 100%;
     }
   }
-
-  @keyframes more {
-    from {
-      opacity: 0;
-      top: 0;
-    }
-    to {
-      top: 10px;
-      opacity: 100%;
-    }
-  }
 }
 
 .banner_title {
@@ -165,7 +143,6 @@
     text-transform: uppercase;
     text-align: center;
     line-height: 100%;
-    max-width: 300px;
   }
 }
 
@@ -190,5 +167,27 @@
     font-family: "Futura PT-Demi", sans-serif;
     font-weight: 500;
     margin: 0 0 3px 0;
+  }
+}
+
+.more {
+  img {
+    animation-delay: 600ms;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-name: more;
+    position: relative;
+  }
+}
+
+@keyframes more {
+  from {
+    opacity: 0;
+    top: 0;
+  }
+  to {
+    top: 10px;
+    opacity: 100%;
   }
 }

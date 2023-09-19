@@ -21,9 +21,6 @@
       margin-top: 0;
       max-width: 394px;
     }
-    .ready {
-      max-width: 740px;
-    }
   }
 
   .banner_test_go {
@@ -88,7 +85,6 @@
     }
     .logo {
       height: 56px;
-      top: 11px;
     }
   }
 }
@@ -112,6 +108,9 @@
   .banner_more {
     .more_img {
       width: 272px;
+    }
+    .more {
+      top: 45px;
     }
   }
 }
