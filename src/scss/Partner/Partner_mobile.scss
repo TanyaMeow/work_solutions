@@ -3,13 +3,13 @@
     width: 489px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .partner_container {
     img {
       width: 35%;
-      margin-right: 17px;
+      margin: 0;
     }
   }
 
@@ -30,10 +30,10 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .partner_container {
-    img {
-      margin-right: 31px;
+    .partner_cards {
+      width: 390px;
     }
   }
 }
