@@ -55,6 +55,10 @@
     max-width: 320px;
   }
 
+  .container_expert_card::-webkit-scrollbar {
+    display: none;
+  }
+
   .expert_cards {
     max-width: 320px;
     margin-left: 5px !important;
@@ -62,4 +66,8 @@
     justify-content: normal;
     gap: 48px;
   }
+}
+
+@media (max-width: 350px) {
+
 }
