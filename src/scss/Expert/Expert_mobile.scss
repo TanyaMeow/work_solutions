@@ -52,11 +52,7 @@
 @media  (max-width: 448px) {
   .container_expert_card {
     overflow-x: scroll;
-    max-width: 320px;
-  }
-
-  .container_expert_card::-webkit-scrollbar {
-    display: none;
+    width: 100%;
   }
 
   .expert_cards {
@@ -69,5 +65,7 @@
 }
 
 @media (max-width: 350px) {
-
+    .experts_block {
+      width: 288px;
+    }
 }
